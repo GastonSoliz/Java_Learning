@@ -14,6 +14,19 @@ public class Cliente {
     private String phone;
     private String mail;
     private String country;
+    
+    public Cliente(){
+        System.out.println("Instanciamos un constructor vacio");
+    }
+    
+    public Cliente(String n, String lN, String p, String m, String c){
+        this.name = n;
+        this.lastName = lN;
+        this.phone = p;
+        this.mail = m;
+        this.country = c;
+        System.out.println("Instanciamos un constructor con argumentosw");
+    }
 
     public String getName() {
         return name;
